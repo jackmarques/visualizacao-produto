@@ -125,7 +125,7 @@ body{
 }
 
 
-@media (max-width: 470px) {
+@media (max-width: 499px) {
   .card {
     flex-direction: column;
     width: 90%;
@@ -136,11 +136,14 @@ body{
     background-image: url('images/image-product-mobile.jpg');
     width: 100%;
     height: 450px;
+    background-size: cover; 
+    background-repeat: no-repeat; /* evita repetir se sobrar espaço */
+    background-position: center; /* centraliza */
   }
 
   .info-produto {
     width: 100%;
-    padding: 20px;
+    padding: 40px;
   }
 
   .info-produto h1 {
@@ -166,7 +169,7 @@ body{
   }
 }
 
-@media (min-width: 471px) and (max-width: 1024px) {
+@media (min-width: 500px) and (max-width: 900px) {
   .card {
     flex-direction: column;
     width: 90%;
@@ -175,9 +178,10 @@ body{
   }
 
   .image {
-    background-image: url('images/image-product-desktop.jpg'); /* ou outra versão tablet se tiver */
+    background-image: url('images/image-product-mobile.jpg'); /* ou outra versão tablet se tiver */
     width: 100%;
-    height: 400px;
+    height: 500px;
+    background-size: cover; 
   }
 
   .info-produto {
@@ -203,7 +207,7 @@ body{
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 901px) and (max-width: 1440px) {
   .card {
     flex-direction: row; /* garante lado a lado */
     width: 90%;
